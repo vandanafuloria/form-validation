@@ -1,18 +1,27 @@
 
 
 .main{
+ 
     display: flex;
-    padding:20px;
+    
     justify-content: space-around;
  
         width: 60%;
         margin: auto;
+        margin-top: 5em;
+        border: rgb(255,75,43) 2px solid;
+        border-radius: 15px;
+        overflow: hidden;
+
+    
+      
     
 }
 .sign-in{
     padding: 20px;
     text-align: center;
     flex-basis: 49%;
+
 }
 .social-media{
     display: flex
@@ -20,6 +29,7 @@
         justify-content: space-around;
         width: 50%;
         margin: auto;
+        min-width: 135px;
 }
 .icon{
     display: inline-block;
@@ -29,9 +39,7 @@
     border: 1px black solid;
     border-radius: 50%;
 }
-.sign-up{
-    display: flex;
-}
+
 .form-group{
     position: relative;
     width: 70%;
@@ -45,6 +53,9 @@ button{
     border-radius: 10px;
     border: transparent;
     font-size: medium;
+    margin-top: 10px;
+
+
 }
 
 
@@ -56,14 +67,21 @@ button{
     padding-top: 5em;
     min-width: 270px;
     flex-basis: 51%;
+    background: rgb(255,75,43);
+    background: linear-gradient(108deg, rgba(255,75,43,1) 0%, rgba(238,131,7,1) 99%);;
+    color:white;
+  
 }
 .signup-entry p{
     font-size: medium;
-   margin: 20px;
+   margin: 20px auto;
     letter-spacing: 0.3px;
+    width: 90%;
+
+
 
 }
-.main input{
+ input{
 
         width: 90%;
     
@@ -75,7 +93,7 @@ button{
       
       
 }
-.main label{
+ label{
   
         position: absolute;
         left: 10px;
@@ -87,8 +105,41 @@ button{
         pointer-events: none;
     
 }
-.main input:focus + label{
+input:focus + label{
     top: -8px;
     left: 8px;
     font-size: 12px;
+}
+
+/*******************************************************/
+.sign-up{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    margin-top:5em;
+  
+    border: 2px rgb(255,75,43) solid;
+    border-radius: 15px;
+    overflow:hidden;
+}
+.sign{
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+}
+.login-entry{
+    padding: 20px;
+    text-align: center;
+    padding-top: 3em;
+   background: rgb(255,75,43);
+    background: linear-gradient(108deg, rgba(255,75,43,1) 0%, rgba(238,131,7,1) 99%);;
+    color:white;
+}
+.login-entry p{
+    width: 90%;
+    letter-spacing: 0.3px;
+    text-align: center;
+ 
+    margin: 20px auto;
 }
