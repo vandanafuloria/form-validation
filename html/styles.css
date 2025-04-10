@@ -39,6 +39,13 @@
     border: 1px black solid;
     border-radius: 50%;
 }
+.icon:hover{
+    border: 1px solid rgb(255,75,43) ;
+   
+}
+.icon:hover i{
+    color: rgb(255,75,43);
+}
 
 .form-group{
     position: relative;
