@@ -11,43 +11,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>htmlForm</title>
+    <title>sign up</title>
   </head>
   <body>
-    <div class="main">
-      <div class="sign-in">
-        <h1>Sign in</h1>
+    <div class="sign-up">
+      <div class="login-entry">
+        <h1>Welcome Back !</h1>
+        <p>to keep connected with up please login with your personal info</p>
+        <a href="index.html" target="_blank"
+          ><button type="button">Login</button></a
+        >
+      </div>
+      <div class="sign">
+        <h1>Create Account</h1>
         <form action="">
           <div class="social-media">
             <span class="icon"><i class="fa-brands fa-google-plus-g"></i></span>
             <span class="icon"><i class="fa-brands fa-github"></i></span>
             <span class="icon"> <i class="fa-brands fa-linkedin-in"></i></span>
           </div>
-          <p>Or use your Account</p>
+          <div class="form-group">
+            <input type="text" id="name" required placeholder=" " />
+            <label for="name">Name</label>
+          </div>
           <div class="form-group">
             <input type="email" id="email" placeholder=" " required />
-           
-
             <label for="email">Email</label>
           </div>
           <div class="form-group">
             <input type="password" id="password" placeholder=" " required />
             <label for="password">Password</label>
           </div>
-          <p><a href="#">Forgot your password ? </a></p>
-          <button type="submit">Login</button>
+          <div class="form-group">
+            <input type="password" id="confirm-pw" placeholder=" " required />
+            <label for="confirm-pw">Confirm Password</label>
+          </div>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
-      <div class="signup-entry">
-        <h1>Hello Friend !</h1>
-        <p>Enter Your personal details and start journey with us</p>
-        <a href="signup.html" target="_blank">
-          <button type="button">Sign Up</button>
-        </a>
-      </div>
     </div>
- 
-    </div>
-    <script src="index.js"></script>
   </body>
 </html>
