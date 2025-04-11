@@ -167,3 +167,8 @@ input:user-invalid{
  
     margin: 20px auto;
 }
+
+.error.active {
+    padding: 0.3em;
+    font-size: xx-small;
+  }
