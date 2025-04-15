@@ -6,8 +6,10 @@
     
     justify-content: space-around;
  
-        width: 60%;
-        margin: auto;
+    max-width: 1000px;
+    margin: auto;
+   min-width: 300px;
+      
         margin-top: 5em;
         border: rgb(255,75,43) 2px solid;
         border-radius: 15px;
@@ -41,6 +43,7 @@
 }
 .icon:hover{
     border: 1px solid rgb(255,75,43) ;
+    cursor: pointer;
    
 }
 .icon:hover i{
@@ -72,7 +75,7 @@ button{
     text-align: center;
     padding: auto;
     padding-top: 5em;
-    min-width: 270px;
+    /* min-width: 270px; */
     flex-basis: 51%;
     background: rgb(255,75,43);
     background: linear-gradient(108deg, rgba(255,75,43,1) 0%, rgba(238,131,7,1) 99%);;
@@ -97,6 +100,7 @@ button{
         border: 1px solid #ccc;
         border-radius: 4px;
         outline: none;
+        cursor: pointer;
       
       
 }
@@ -139,8 +143,8 @@ input:user-invalid{
 .sign-up{
     display: flex;
     justify-content: space-around;
-    width: 60%;
-    margin: auto;
+   max-width: 1000px;
+   margin: auto;
     margin-top:5em;
   
     border: 2px rgb(255,75,43) solid;
@@ -148,10 +152,15 @@ input:user-invalid{
     overflow:hidden;
 }
 .sign{
-    flex-basis: 50%;
+    flex-basis: 49%;
     margin: auto;
     text-align: center;
+
 }
+.sign form {
+    min-width: 280px;
+}
+
 .login-entry{
     padding: 20px;
     text-align: center;
@@ -159,6 +168,7 @@ input:user-invalid{
    background: rgb(255,75,43);
     background: linear-gradient(108deg, rgba(255,75,43,1) 0%, rgba(238,131,7,1) 99%);;
     color:white;
+    min-width: 250px;
 }
 .login-entry p{
     width: 90%;
@@ -171,4 +181,19 @@ input:user-invalid{
 .error.active {
     padding: 0.3em;
     font-size: xx-small;
+  }
+
+
+  @media (max-width: 600px){
+    .main , .sign-up{
+        flex-wrap: wrap;
+        
+       
+    }
+    .sign-in, .signup-entry,.sign, .login-entry {
+        flex-basis: 100%;
+    }
+    .sign, .login-entry{
+        padding-bottom: 3rem;
+    }
   }
